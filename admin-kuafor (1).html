@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuaförün Paneli</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body class="container-fluid">
+
+  <style>
+    .row {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .table {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .table th,
+    .table td {
+      padding: 10px;
+    }
+
+    .table th {
+      text-align: center;
+    }
+
+    .table td input[type="radio"] {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="container-fluid">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Kuaför Salonu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="#">Ana Sayfa</a>
+      <a class="nav-link" href="#">Randevular</a>
+      <a class="nav-link" href="#">Puanlar</a>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-md-6">
+    <h2 class="text-center">Çalışma Saatlerini Belirle</h2>
+    <form id="calisma-saatleri-form">
+      <div class="form-group">
+        <label for="isletim-saatleri">İşletim Saatleri</label>
+        <input type="text" class="form-control" id="isletim-saatleri" placeholder="Örneğin 09:00-18:00 gibi..">
+      </div>
+      <button type="button" class="btn btn-warning">Kaydet</button>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <h2 class="text-center">Sistemden Gelen Randevular</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Müşteri Adı</th>
+          <th>Tarih</th>
+          <th>Saat</th>
+          <th>İşlem</th>
+          <th>Durum</th>
+          <th>Onayla</th>
+          <th>Reddet</th>
+        </tr>
+      </thead>
+      <tbody id="randevular">
+        <tr>
+          <td>Mehmet Yılmaz</td>
+          <td>2023-08-01</td>
+          <td>10:00</td>
+          <td>Saç Kesimi</td>
+          <td class="bg-success">Onaylandı</td>
+          <td><input type="radio" name="onay" value="1" checked> Onay</td>
+          <td><input type="radio" name="onay" value="0"> Reddet</td>
+        </tr>
+		
+		<tr>
+          <td>Ayşegül Demir</td>
+          <td>2023-08-01</td>
+          <td>10:00</td>
+          <td>Saç Kesimi</td>
+          <td class="bg-danger">Red</td>
+          <td><input type="radio" name="onay" value="1" checked> Onay</td>
+          <td><input type="radio" name="onay" value="0"> Reddet</td>
+        </tr>
+		<tr>
+          <td>Veli Yılmaz</td>
+          <td>2023-08-01</td>
+          <td>10:00</td>
+          <td>Saç Kesimi</td>
+          <td class="bg-success">Onaylandı</td>
+          <td><input type="radio" name="onay" value="1" checked> Onay</td>
+          <td><input type="radio" name="onay" value="0"> Reddet</td>
+        </tr>
+		
+		<tr>
+          <td>Ali Demir</td>
+          <td>2023-08-01</td>
+          <td>10:00</td>
+          <td>Saç Kesimi</td>
+          <td class="bg-danger">Red</td>
+          <td><input type="radio" name="onay" value="1" checked> Onay</td>
+          <td><input type="radio" name="onay" value="0"> Reddet</td>
+        </tr>
+       
+
+		

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuaför Randevu Paneli</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <style>
+    .row {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .table {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .table th,
+    .table td {
+      padding: 10px;
+    }
+
+    .table th {
+      text-align: center;
+    }
+
+    .table td input[type="radio"] {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="container-fluid">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Kuaför Salonu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="#">Randevu Al</a>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-md-6">
+    <h2 class="text-center">Kuaförler</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Kuaför Adı</th>
+          <th>Uygunluk Durumu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mehmet Yılmaz</td>
+          <td class="bg-success">Uygun</td>
+        </tr>
+        <tr>
+          <td>Ayşegül Demir</td>
+          <td class="bg-danger">Dolu</td>
+        </tr>
+        <tr>
+          <td>Fatma Erdoğan</td>
+          <td class="bg-warning">Yarım Dolu</td>
+        </tr>
+		<tr>
+          <td>Yılmaz Kuaför</td>
+          <td class="bg-success">Uygun</td>
+        </tr>
+        <tr>
+          <td>Demir Kuaför</td>
+          <td class="bg-danger">Dolu</td>
+        </tr>
+        <tr>
+          <td>Erdoğan Kuaför</td>
+          <td class="bg-warning">Yarım Dolu</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h2 class="text-center">Randevu Al</h2>
+    <form action="/randevu-al" method="post">
+      <div class="form-group">
+        <label for="kuafor">Kuaför</label>
+        <select class="form-control" id="kuafor">
+          <option value="">Seçiniz</option>
+          <option value="Mehmet Yılmaz">Mehmet Yılmaz</option>
+          <option value="Ayşegül Demir">Ayşegül Demir</option>
+          <option value="Fatma Erdoğan">Fatma Erdoğan</option>
+		  <option value="Mehmet Yılmaz">Yılmaz Kuaför</option>
+          <option value="Ayşegül Demir">Demir  Kuaför</option>
+          <option value="Fatma Erdoğan">Erdoğan  Kuaför</option>
+        </select>
+      </div>
+      
+   
+<div class="form-group">
+  <label for="tarih">Tarih Seçiniz</label>
+  <input type="date" class="form-control" id="tarih">
+</div>
+<div class="form-group">
+  <label for="saat">Saat Seçiniz</label>
+  <input type="time" class="form-control" id="saat">
+</div>
+<div class="form-group">
+  <label for="islem">İşlemler</label>
+  <select class="form-control" id="islem">
+    <option value="">İşlem Seçiniz</option>
+    <option value="Saç Kesimi">Saç Kesimi</option>
+    <option value="Fön">Fön</option>
+    <option value="Saç Boyama">Saç Boyama</option>
+    <option value="Manikür">Manikür</option>
+    <option value="Pedikür">Pedikür</option>
+    <option value="Nailart">Nailart</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="not">Not Yazabilirsiniz</label>
+  <textarea class="form-control" id="not" rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-primary" id="randevu-al">Randevu Al</button>
+
