@@ -19,3 +19,8 @@
  ![FireShot Capture 003 - Kuaför Randevu Paneli - ](https://github.com/fatmanyilmaz/KuaforRandevuSistemi/assets/102298537/f27c07ab-e1fc-4aa9-b75e-f7b29080834c)
  5) Sayfaya giren müşteri çalışanların müsaitlik durumunu görebilir, randevu alabilir, yaptırmak istediği işlemi önceden bildirebilir.
 
+
+
+ Hayrunnisa Gülsün 131930059
+ Fatma Nur Yılmaz 131930003
+
